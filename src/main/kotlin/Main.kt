@@ -5,15 +5,15 @@ fun main(args: Array<String>) {
     val reader = Scanner(System.`in`)
 
     print("Введите число: ")
-    var n = reader.nextDouble()
+    val n = reader.nextDouble()
 
     print("Перевести в байты(b) или килобайты(k): ")
     val c = reader.next()
 
     when (c) {
-        "b" -> n *= 1024
-        "k" -> n /= 1024
-    }
+        "b" -> print(n * 1024)
+        "k" -> print(n / 1024)
 
-    print(n)
+        else -> print("Неверный ввод")
+    }
 }
