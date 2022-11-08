@@ -10,10 +10,17 @@ fun main(args: Array<String>) {
     print("Перевести в байты(b) или килобайты(k): ")
     val c = reader.next()
 
-    when (c) {
+//    when (c) {
+//        "b" -> print(n * 1024)
+//        "k" -> print(n / 1024)
+//
+//        else -> print("Неверный ввод")
+//    }
+    val result = when (c) {
         "b" -> print(n * 1024)
         "k" -> print(n / 1024)
-
-        else -> print("Неверный ввод")
+        else -> "Неверный ввод"
     }
+
+    print(result)
 }
