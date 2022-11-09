@@ -17,8 +17,8 @@ fun main(args: Array<String>) {
 //        else -> print("Неверный ввод")
 //    }
     val result = when (c) {
-        "b" -> print(n * 1024)
-        "k" -> print(n / 1024)
+        "b" -> (n * 1024)
+        "k" -> (n / 1024)
         else -> "Неверный ввод"
     }
 
